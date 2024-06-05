@@ -156,7 +156,7 @@ CopyFineToCoarseWithFiltering3D<T,Descriptor1,Descriptor2>::operator= (
     numTimeSteps = rhs.numTimeSteps;
     executionTime = rhs.executionTime;
     indices.resize(0);
-    indices.assign(indices.begin(),rhs.indices.begin(),rhs.indices.end());
+    indices.assign(rhs.indices.begin(),rhs.indices.end());
     return *this;
 }
 
